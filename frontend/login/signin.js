@@ -7,7 +7,7 @@ async function createAccount (event) {
     try { 
         const username = document.getElementById("inputUsername")
         const password = document.getElementById("inputPassword")
-        const payload = {username, password}
+        const payload = { username, password }
 
         const response = await fetch("/signin", {
             method: "POST",
